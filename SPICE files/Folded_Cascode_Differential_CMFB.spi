@@ -1,0 +1,43 @@
+*** SPICE deck for cell Folded_Cascode_Differential_CMFB{lay} from library Amplifiers
+*** Created on Sat Jul 17, 2021 00:44:12
+*** Last revised on Mon Jul 19, 2021 21:44:48
+*** Written on Mon Jul 19, 2021 21:46:49 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: Folded_Cascode_Differential_CMFB{lay}
+Mnmos@8 net@326 Vin+ net@325 gnd nMOS L=0.6U W=3.6U AS=7.02P AD=5.783P PS=11.1U PD=7.2U
+Mnmos@11 net@337 Vin+ net@336 gnd nMOS L=0.6U W=3.6U AS=7.02P AD=9.945P PS=11.1U PD=13.5U
+Mnmos@12 net@339 Vin- net@326 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=7.02P PS=7.2U PD=11.1U
+Mnmos@13 net@336 Vin- net@337 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=7.02P PS=13.5U PD=11.1U
+Mnmos@14 net@326 V_bn net@342 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=5.783P PS=13.5U PD=7.2U
+Mnmos@15 net@337 V_bn net@344 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=9.945P PS=13.5U PD=13.5U
+Mnmos@16 net@347 V_bn net@326 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=9.945P PS=7.2U PD=13.5U
+Mnmos@17 net@344 V_bn net@337 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=9.945P PS=13.5U PD=13.5U
+Mnmos@18 gnd Vout- net@342 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=15.12P PS=13.5U PD=21.9U
+Mnmos@19 gnd Vref net@344 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=15.12P PS=13.5U PD=21.9U
+Mnmos@20 net@347 Vout+ gnd gnd nMOS L=0.6U W=3.6U AS=15.12P AD=9.945P PS=21.9U PD=13.5U
+Mnmos@21 net@344 Vref gnd gnd nMOS L=0.6U W=3.6U AS=15.12P AD=9.945P PS=21.9U PD=13.5U
+Mnmos@22 net@362 V_b3 Vout+ gnd nMOS L=0.6U W=3.6U AS=7.02P AD=9.945P PS=11.1U PD=13.5U
+Mnmos@23 net@362 V_b4 gnd gnd nMOS L=0.6U W=3.6U AS=15.12P AD=9.945P PS=21.9U PD=13.5U
+Mnmos@24 Vout- V_b3 net@365 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=7.02P PS=13.5U PD=11.1U
+Mnmos@25 gnd V_b4 net@365 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=15.12P PS=13.5U PD=21.9U
+Mpmos@4 Vout- V_b2 net@325 vdd pMOS L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+Mpmos@5 vdd net@336 net@336 vdd pMOS L=0.6U W=3.6U AS=7.02P AD=41.22P PS=11.1U PD=33.7U
+Mpmos@6 vdd net@336 net@325 vdd pMOS L=0.6U W=3.6U AS=7.02P AD=41.22P PS=11.1U PD=33.7U
+Mpmos@7 net@339 net@336 vdd vdd pMOS L=0.6U W=3.6U AS=41.22P AD=7.02P PS=33.7U PD=11.1U
+Mpmos@9 net@339 V_b2 Vout+ vdd pMOS L=0.6U W=3.6U AS=7.02P AD=7.02P PS=11.1U PD=11.1U
+
+* Spice Code nodes in cell cell 'Folded_Cascode_Differential_CMFB{lay}'
+vdd VDD 0 DC 5
+vin Vin+ Vcm sin(0 1m 1k 0 0 0)
+vin2 Vin- Vcm DC sin(0 1m 1k 0 0 180)
+vin3 V_bn 0 DC 1.03
+vin5 V_b2 0 DC 2.54
+vin6 V_b3 0 DC 2.33
+vin7 V_b4 0 DC 1
+vin8 Vcm 0 DC 4.5
+vin9 Vref 0 DC 2.5
+.tran 0.01
+.include C:\Users\athar\Documents\Electric VLSI\C5_models.txt
+.END

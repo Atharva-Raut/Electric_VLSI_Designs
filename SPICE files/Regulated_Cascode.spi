@@ -1,0 +1,80 @@
+*** SPICE deck for cell Regulated_Cascode{lay} from library Amplifiers
+*** Created on Sat Jul 17, 2021 00:44:12
+*** Last revised on Mon Jul 19, 2021 22:44:24
+*** Written on Mon Jul 19, 2021 23:03:43 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: Regulated_Cascode{lay}
+Mnmos@0 net@1 V_b2 net@0 gnd nMOS L=0.6U W=3.6U AS=5.22P AD=5.783P PS=7.7U PD=7.2U
+Mnmos@1 net@3 net@19 net@1 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=5.22P PS=7.2U PD=7.7U
+Mnmos@2 net@1 V_b gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=5.783P PS=22.77U PD=7.2U
+Mnmos@3 gnd V_b net@1 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=15.66P PS=7.2U PD=22.77U
+Mnmos@4 gnd net@22 net@50 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=15.66P PS=13.5U PD=22.77U
+Mnmos@5 net@25 V_b3 net@50 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=7.02P PS=13.5U PD=11.1U
+Mnmos@6 net@55 net@22 gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=9.945P PS=22.77U PD=13.5U
+Mnmos@7 net@55 V_b3 net@22 gnd nMOS L=0.6U W=3.6U AS=7.02P AD=9.945P PS=11.1U PD=13.5U
+Mnmos@8 net@272 V_b2 net@271 gnd nMOS L=0.6U W=3.6U AS=5.22P AD=5.783P PS=7.7U PD=7.2U
+Mnmos@9 net@287 net@278 net@272 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=5.22P PS=7.2U PD=7.7U
+Mnmos@10 net@272 V_b gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=5.783P PS=22.77U PD=7.2U
+Mnmos@11 gnd V_b net@272 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=15.66P PS=7.2U PD=22.77U
+Mnmos@12 gnd net@289 net@332 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=15.66P PS=13.5U PD=22.77U
+Mnmos@13 net@295 V_b3 net@332 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=7.02P PS=13.5U PD=11.1U
+Mnmos@14 net@330 net@289 gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=9.945P PS=22.77U PD=13.5U
+Mnmos@15 net@330 V_b3 net@289 gnd nMOS L=0.6U W=3.6U AS=7.02P AD=9.945P PS=11.1U PD=13.5U
+Mnmos@24 net@440 V_b2 net@439 gnd nMOS L=0.6U W=3.6U AS=5.22P AD=5.783P PS=7.7U PD=7.2U
+Mnmos@25 net@455 net@446 net@440 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=5.22P PS=7.2U PD=7.7U
+Mnmos@26 net@440 V_b gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=5.783P PS=22.77U PD=7.2U
+Mnmos@27 gnd V_b net@440 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=15.66P PS=7.2U PD=22.77U
+Mnmos@28 gnd net@457 net@500 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=15.66P PS=13.5U PD=22.77U
+Mnmos@29 net@463 V_b3 net@500 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=7.02P PS=13.5U PD=11.1U
+Mnmos@30 net@498 net@457 gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=9.945P PS=22.77U PD=13.5U
+Mnmos@31 net@498 V_b3 net@457 gnd nMOS L=0.6U W=3.6U AS=7.02P AD=9.945P PS=11.1U PD=13.5U
+Mnmos@32 net@524 V_b2 net@523 gnd nMOS L=0.6U W=3.6U AS=5.22P AD=5.783P PS=7.7U PD=7.2U
+Mnmos@33 net@539 net@530 net@524 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=5.22P PS=7.2U PD=7.7U
+Mnmos@34 net@524 V_b gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=5.783P PS=22.77U PD=7.2U
+Mnmos@35 gnd V_b net@524 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=15.66P PS=7.2U PD=22.77U
+Mnmos@36 gnd net@541 net@584 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=15.66P PS=13.5U PD=22.77U
+Mnmos@37 net@547 V_b3 net@584 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=7.02P PS=13.5U PD=11.1U
+Mnmos@38 net@582 net@541 gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=9.945P PS=22.77U PD=13.5U
+Mnmos@39 net@582 V_b3 net@541 gnd nMOS L=0.6U W=3.6U AS=7.02P AD=9.945P PS=11.1U PD=13.5U
+Mnmos@48 net@713 V+ net@278 gnd nMOS L=0.6U W=3.6U AS=5.22P AD=5.783P PS=7.7U PD=7.2U
+Mnmos@49 net@446 V- net@713 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=5.22P PS=7.2U PD=7.7U
+Mnmos@50 net@713 V_b gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=5.783P PS=22.77U PD=7.2U
+Mnmos@51 gnd V_b net@713 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=15.66P PS=7.2U PD=22.77U
+Mnmos@52 gnd net@727 net@530 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=15.66P PS=13.5U PD=22.77U
+Mnmos@53 Vout net@547 net@530 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=7.02P PS=13.5U PD=11.1U
+Mnmos@54 net@19 net@727 gnd gnd nMOS L=0.6U W=3.6U AS=15.66P AD=9.945P PS=22.77U PD=13.5U
+Mnmos@55 net@19 net@25 net@727 gnd nMOS L=0.6U W=3.6U AS=7.02P AD=9.945P PS=11.1U PD=13.5U
+Mpmos@0 net@0 V_b2 net@22 vdd pMOS L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@1 net@25 V_b2 net@3 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mpmos@2 vdd V_b1 net@0 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=73.44P PS=7.7U PD=30.24U
+Mpmos@3 net@3 V_b1 vdd vdd pMOS L=0.6U W=3.6U AS=73.44P AD=5.22P PS=30.24U PD=7.7U
+Mpmos@4 net@271 V_b2 net@289 vdd pMOS L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@5 net@295 V_b2 net@287 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mpmos@6 vdd V_b1 net@271 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=73.44P PS=7.7U PD=30.24U
+Mpmos@7 net@287 V_b1 vdd vdd pMOS L=0.6U W=3.6U AS=73.44P AD=5.22P PS=30.24U PD=7.7U
+Mpmos@12 net@439 V_b2 net@457 vdd pMOS L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@13 net@463 V_b2 net@455 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mpmos@14 vdd V_b1 net@439 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=73.44P PS=7.7U PD=30.24U
+Mpmos@15 net@455 V_b1 vdd vdd pMOS L=0.6U W=3.6U AS=73.44P AD=5.22P PS=30.24U PD=7.7U
+Mpmos@16 net@523 V_b2 net@541 vdd pMOS L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@17 net@547 V_b2 net@539 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mpmos@18 vdd V_b1 net@523 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=73.44P PS=7.7U PD=30.24U
+Mpmos@19 net@539 V_b1 vdd vdd pMOS L=0.6U W=3.6U AS=73.44P AD=5.22P PS=30.24U PD=7.7U
+Mpmos@24 net@278 net@295 net@727 vdd pMOS L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@25 Vout net@463 net@446 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mpmos@26 vdd V_b1 net@278 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=73.44P PS=7.7U PD=30.24U
+Mpmos@27 net@446 V_b1 vdd vdd pMOS L=0.6U W=3.6U AS=73.44P AD=5.22P PS=30.24U PD=7.7U
+
+* Spice Code nodes in cell cell 'Regulated_Cascode{lay}'
+vdd VDD 0 DC 5
+vin V+ 0 sin(2 1m 1meg 0 0 0)
+vin2 V- 0 sin(2 1m 1meg 0 0 180)
+vin3 V_b 0 DC 1.03
+vin4 V_b1 0 DC 3.31
+vin5 V_b2 0 DC 2.54
+vin6 V_b3 0 DC 2.33
+.tran 0.01m
+.include C:\Users\athar\Documents\Electric VLSI\C5_models.txt
+.END

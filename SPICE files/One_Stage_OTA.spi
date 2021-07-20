@@ -1,0 +1,23 @@
+*** SPICE deck for cell One_Stage_OTA{lay} from library Amplifiers
+*** Created on Sat Jul 17, 2021 00:44:12
+*** Last revised on Sat Jul 17, 2021 23:50:27
+*** Written on Sat Jul 17, 2021 23:50:37 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: One_Stage_OTA{lay}
+Mnmos@0 net@1 V+ net@0 gnd nMOS L=0.6U W=3.6U AS=7.02P AD=5.783P PS=11.1U PD=7.2U
+Mnmos@1 V_out V- net@1 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=7.02P PS=7.2U PD=11.1U
+Mnmos@2 net@1 V_b gnd gnd nMOS L=0.6U W=3.6U AS=12.42P AD=5.783P PS=19.8U PD=7.2U
+Mnmos@3 gnd V_b net@1 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=12.42P PS=7.2U PD=19.8U
+Mpmos@0 vdd net@0 net@0 vdd pMOS L=0.6U W=3.6U AS=7.02P AD=9.72P PS=11.1U PD=14.7U
+Mpmos@1 V_out net@0 vdd vdd pMOS L=0.6U W=3.6U AS=9.72P AD=7.02P PS=14.7U PD=11.1U
+
+* Spice Code nodes in cell cell 'One_Stage_OTA{lay}'
+vdd VDD 0 DC 5
+vin V+ 0 sin(2.5V 200mV 500meg 4ns 0 0)
+vin2 V- 0 sin(2.5V 200mV 500meg 4ns 0 180)
+vin3 V_b 0 DC 1.78
+.tran 40ns
+.include C:\Users\athar\Documents\Electric VLSI\C5_models.txt
+.END

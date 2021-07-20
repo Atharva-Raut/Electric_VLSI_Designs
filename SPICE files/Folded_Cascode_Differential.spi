@@ -1,0 +1,34 @@
+*** SPICE deck for cell Folded_Cascode_Differential{lay} from library Amplifiers
+*** Created on Sat Jul 17, 2021 00:44:12
+*** Last revised on Mon Jul 19, 2021 01:14:38
+*** Written on Mon Jul 19, 2021 22:53:27 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: Folded_Cascode_Differential{lay}
+Mnmos@0 net@1 V+ net@0 gnd nMOS L=0.6U W=3.6U AS=5.22P AD=5.783P PS=7.7U PD=7.2U
+Mnmos@1 net@3 V- net@1 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=5.22P PS=7.2U PD=7.7U
+Mnmos@2 net@1 V_b gnd gnd nMOS L=0.6U W=3.6U AS=13.77P AD=5.783P PS=20.85U PD=7.2U
+Mnmos@3 gnd V_b net@1 gnd nMOS L=0.6U W=3.6U AS=5.783P AD=13.77P PS=7.2U PD=20.85U
+Mnmos@4 gnd V_b4 net@50 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=13.77P PS=13.5U PD=20.85U
+Mnmos@5 Vout+ V_b3 net@50 gnd nMOS L=0.6U W=3.6U AS=9.945P AD=7.02P PS=13.5U PD=11.1U
+Mnmos@6 net@55 V_b4 gnd gnd nMOS L=0.6U W=3.6U AS=13.77P AD=9.945P PS=20.85U PD=13.5U
+Mnmos@7 net@55 V_b3 Vout- gnd nMOS L=0.6U W=3.6U AS=7.02P AD=9.945P PS=11.1U PD=13.5U
+Mpmos@0 net@0 V_b2 Vout- vdd pMOS L=0.6U W=3.6U AS=7.02P AD=5.22P PS=11.1U PD=7.7U
+Mpmos@1 Vout+ V_b2 net@3 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=7.02P PS=7.7U PD=11.1U
+Mpmos@2 vdd V_b1 net@0 vdd pMOS L=0.6U W=3.6U AS=5.22P AD=15.12P PS=7.7U PD=21.9U
+Mpmos@3 net@3 V_b1 vdd vdd pMOS L=0.6U W=3.6U AS=15.12P AD=5.22P PS=21.9U PD=7.7U
+
+* Spice Code nodes in cell cell 'Folded_Cascode_Differential{lay}'
+vdd VDD 0 DC 5
+vin V+ Vcm sin(0 1m 1meg 0 0 0)
+vin2 V- Vcm DC sin(0 1m 1meg 0 0 180)
+vin3 V_b 0 DC 1.03
+vin4 V_b1 0 DC 3.31
+vin5 V_b2 0 DC 2.54
+vin6 V_b3 0 DC 2.33
+vin7 V_b4 0 DC 1
+vin8 Vcm 0 DC 2.165
+.tran 0.01m
+.include C:\Users\athar\Documents\Electric VLSI\C5_models.txt
+.END
